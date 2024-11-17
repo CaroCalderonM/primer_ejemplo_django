@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo - Productos</title>
+  </head>
+  <body>
+    <h1>Página de {{titulo}}</h1>
+    <!-- Con este ciclo ul estoy creando la lista dinámica de productos 
+    que variará según la lista de mi archivo views.py-->
+    <ul>
+      {% for producto in productos %}
+      <li>{{ producto }}</li>
+      {% endfor %}
+    </ul>
+
+    <h4 style="color: blue">Producto preferido: {{productos.0}}</h4>
+  </body>
+</html>
